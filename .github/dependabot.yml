@@ -15,3 +15,11 @@ updates:
       prefix: fix
       prefix-development: chore
       include: scope
+    ignore:
+      # Ignore some updates to the 'vue' package
+      - dependency-name: "vue"
+        # Ignore only new versions for 3.x and 4.x
+        versions: ["3.x", "4.x"]
+      - dependency-name: "webpack"
+        # Ignore only new versions for 5.x and 6.x
+        versions: ["5.x", "6.x"]        
